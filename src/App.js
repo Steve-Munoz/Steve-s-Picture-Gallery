@@ -1,7 +1,7 @@
 
 import './App.css';
 import {Switch, Route} from "react-router-dom"
-import Photo from "./Pages/Photo"
+import Photos from "./Pages/Photos"
 import Cart from "./Pages/Cart"
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     
     <Switch>
       <Route exact path = "/">
-        <Photo/>
+        <Photos/>
 
       </Route>
       <Route path = "/cart">
