@@ -28,6 +28,7 @@ function ContextProvider(props){
     function addToCart(newItem){
         setCartItems(prevItems=> [...prevItems, newItem])
     }
+    
 
     function removeFromCart(id){
         setCartItems(prevItems=>prevItems.filter(item=>item.id !== id))
