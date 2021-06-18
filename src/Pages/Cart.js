@@ -26,19 +26,18 @@ function Cart(){
  
 
     return(
-        <div className="cart-page">
-            <h1>Checkout</h1>
+        <main className="cart-page">
+            <h1>Check out</h1>
             {cartElements}
-            
+            <p className="total-cost">Total:{totalCostDisplay} </p>
             <div className="order-button">
-                {cartItems.length > 0 ? <button onClick={()=>placeOrder()}>{buttonText}</button> :<h3> Make sure to add items to cart!</h3>}
-            </div>
-            <div className ="total-cost">
-                Total: {totalCostDisplay}
-
+                {cartItems.length > 0 ? <button onClick ={()=>placeOrder()}>
+                    {buttonText}
+                </button> : <h3>Make sure to add items to your cart!</h3>}
+                
             </div>
             
-        </div>
+        </main>
     )
 }
 

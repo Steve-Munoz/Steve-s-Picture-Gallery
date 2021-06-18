@@ -1,9 +1,9 @@
-import React,{useState} from "react"
+import React,{useState, useContext} from "react"
 import {Context} from "../Context"
 
 
 function CartItem(props){
-    const {removeFromCart} = useState(Context)
+    const {removeFromCart} = useContext(Context)
     const [hovered, setHovered] = useState(false)
 
     const iconClassName = hovered ? "ri-delete-bin-fill" : "ri-delete-bin-line"
